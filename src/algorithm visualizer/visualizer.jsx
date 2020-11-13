@@ -9,7 +9,7 @@ const ANIMATION_SPEED_MS = 2;
 const NUMBER_OF_ARRAY_BARS = 260;
 
 // This is the main color of the array bars.
-const PRIMARY_COLOR = 'turquoise';
+const PRIMARY_COLOR = 'teal';
 
 // This is the color of array bars that are being compared throughout the animations.
 const SECONDARY_COLOR = 'red';
@@ -102,10 +102,10 @@ export default class SortingVisualizer extends React.Component {
             }}></div>
         ))}
         <button onClick={() => this.resetArray()}>Generate New Array</button>
-        <button onClick={() => this.mergeSort()}>Merge Sort</button>
-        <button onClick={() => this.quickSort()}>Quick Sort</button>
+        <button onClick={() => this.mergeSort()}>Sort</button>
+        {/* <button onClick={() => this.quickSort()}>Quick Sort</button>
         <button onClick={() => this.heapSort()}>Heap Sort</button>
-        <button onClick={() => this.bubbleSort()}>Bubble Sort</button>
+        <button onClick={() => this.bubbleSort()}>Bubble Sort</button> */}
       </div>
     );
   }
